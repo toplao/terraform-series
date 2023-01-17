@@ -128,15 +128,15 @@ $ for var in AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN AWS_SECUR
       unzip awscliv2.zip
       sudo ./aws/install
 
-#      **Install Terraform**
-#      a) *Download binary*
-#     sudo yum update -y
-#     sudo yum install wget unzip -y
-#      sudo wget https://releases.hashicorp.com/terraform/1.4.4/terraform_1.1.4_linux_amd64.zip
-#      sudo unzip terraform_1.1.4_linux_amd64.zip -d /usr/local/bin
-#      terraform -v
+      **Install Terraform** (Note sure ths works)
+      a) *Download binary*
+      sudo yum update -y
+      sudo yum install wget unzip -y
+      sudo wget https://releases.hashicorp.com/terraform/1.4.4/terraform_1.1.4_linux_amd64.zip
+      sudo unzip terraform_1.1.4_linux_amd64.zip -d /usr/local/bin
+      terraform -v
 
-      b) *Install from hashicorp repo*
+      b) *Install from hashicorp repo* (Instead do this)
      sudo yum install -y yum-utils
      sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
      sudo yum -y install terraform
